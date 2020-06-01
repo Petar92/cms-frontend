@@ -6,7 +6,7 @@ import Focus from './components/Focus'
 import AllNews from './components/AllNews'
 import Links from './components/Links'
 import Footer from './components/Footer'
-
+// REPKE LEGENDA 
 const App = () => {
   return (
     <div >
