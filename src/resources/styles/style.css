@@ -1,0 +1,24 @@
+.allNewsStyle {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.newsClass {
+    width: 350px;
+    display: flex;
+    border-style: solid;
+    align-items: center;
+    flex-direction: column;
+    flex: 0.2;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.newsClass img {
+    width: 350px;
+    height: 350px;
+}
