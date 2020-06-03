@@ -27,7 +27,7 @@ const news = [
     img:'bazen.JPG',
     date: currentDate(),
     text:'Iskoristite promo period i uživajte',
-    focus: true},
+    focus: false},
 
     {id: 4,
     img:'jesenja-akcija-2018---breza.png',

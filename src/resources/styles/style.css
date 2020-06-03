@@ -1,4 +1,26 @@
+.header {
+    border-style: solid;
+    margin-bottom: 30px;
+}
+
+.menu {
+    border-style: solid;
+    margin-bottom: 30px;
+}
+
+.focus {
+    border-style: solid;
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    margin-bottom: 30px;
+}
+
 .allNewsStyle {
+    border-style: solid;
     display: flex;
     flex-flow: row wrap;
     width: 1200px;
