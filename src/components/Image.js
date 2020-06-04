@@ -4,7 +4,7 @@ const Image = () => {
     
     return(
         <div>
-            Image
+            <h1>Image</h1>
         </div>
     )
 }

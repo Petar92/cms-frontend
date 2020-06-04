@@ -1,10 +1,9 @@
 import React from 'react'
-import '../resources/styles/style.css'
 
 const Header = () => {
     
     return(
-        <div className="header">
+        <div>
             <h1>Header</h1>
         </div>
     )

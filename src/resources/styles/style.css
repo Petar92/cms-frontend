@@ -1,3 +1,4 @@
+
 .header {
     border-style: solid;
     margin-bottom: 30px;
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 300px;
+    margin-bottom: 30px;
 }
 
 .newsClass {
@@ -34,13 +36,28 @@
     display: flex;
     border-style: solid;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex: 0.2;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.newsClass img {
+.allNews {
     width: 350px;
-    height: 350px;
+    border: solid;
+}
+
+.allNews img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
 }

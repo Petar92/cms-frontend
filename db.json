@@ -1,0 +1,34 @@
+{
+  "data":
+    [  
+      {"id": 1,
+      "img": "obavestenje.png",
+      "text": "Obaveštenje za sve goste!",
+      "focus": true},
+      
+      {"id": 2,
+      "img": "doček-nove-2020-godine.jpg",
+      "text": "Ponuda za doček Nove 2020. godine  i reprizu",
+      "focus": true},
+      
+      {"id": 3,
+      "img": "bazen.JPG",
+      "text": "Iskoristite promo period i uživajte",
+      "focus": false},
+      
+      {"id": 4,
+      "img": "jesenja-akcija-2018---breza.png",
+      "text": "VELIKA JESENJA AKCIJA",
+      "focus": true},
+      
+      {"id": 5,
+      "img": "akcija_breza.JPG",
+      "text": "AKCIJA PONOVO U TOKU!!",
+      "focus": false},
+      
+      {"id": 6,
+      "img":"cenovnik.png",
+      "text": "CENOVNIK ZA 2020. GODINU",
+      "focus": false}
+    ]
+  }

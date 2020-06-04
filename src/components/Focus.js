@@ -1,20 +1,25 @@
 import React from 'react'
 import News from './News'
-import placeholder_news from '../resources/dummy_data/placeholder_news'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
 import '../resources/styles/style.css'
 
-const Focus = () => {
+const Focus = (props) => {
 
     
 
-    const display = placeholder_news.filter(news => news.focus)
-    console.log(display)
-
+    const display = props.news.filter(news => news.focus)
+    
     return(
-        <div className="focus">
-            U fokusu...
-            {display.map(news => 
-                <News key={news.id} data={news}/>)}
+        <div className="test">
+            <Container fluid="md">
+                <h2>U fokusu...</h2>
+                    {display.map(news => 
+                    <Col md={4}>
+                        <News key={news.id} data={news} />
+                    </Col>
+                    )}
+            </Container>
         </div>
     )
 }

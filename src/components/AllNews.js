@@ -1,12 +1,12 @@
 import React from 'react'
 import News from './News'
-import placeholder_news from '../resources/dummy_data/placeholder_news'
+import '../resources/styles/style.css'
 
-const AllNews = () => {
+const AllNews = (props) => {
     
     return(
-        <div className="allNewsStyle">
-            {placeholder_news.map(news => 
+        <div className="allNews">
+            {props.news.map(news => 
                 <News key={news.id} data={news}/>
             )}
         </div>
