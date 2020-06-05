@@ -1,18 +1,32 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../resources/styles/style.css'
 
-const News = () => {
+const News = (props) => {
     
-    const getDate = () => {
-        let d = new Date();
-        const currentDate = d.getFullYear
-        console.log(currentDate)
-        return currentDate
+    const fileName =  props.data.img
+
+    const currentDate = () => {
+        let d = new Date().toISOString();
+        const datum = new Date(d)
+        const day = datum.getDate()
+        const month = datum.getMonth() + 1
+        const year = datum.getFullYear()
+        return day + "." + month + "." + year
+        
     }
+
     return(
-        <article>
-            <img src={require('/home/petar/cms-frontend/src/resources/images/obavestenje.png')} />
-            <h2>date{() => getDate}</h2>
-        </article>
+        <Card border="secondary" bg={"white"}>
+            <Card.Img variant="top" src={require(`/home/repic/cms-frontend/src/resources/images/${fileName}`)} alt="obavestenje" />
+            <Card.Body>
+                <Card.Text>
+                    {currentDate() /* ovo izmeniti kada se poveze sa serverom da vuce datum sa servera */}
+                </Card.Text>
+                <Card.Title>{props.data.text}</Card.Title>
+            </Card.Body>
+        </Card>
     )
 }
 
