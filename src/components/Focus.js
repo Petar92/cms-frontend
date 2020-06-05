@@ -19,7 +19,7 @@ const Focus = (props) => {
     const display = props.news.filter(news => news.focus === true)
     
     return(
-        <Carousel pause='hover' interval='1000' style={{height:`${height}px`}}>
+        <Carousel pause='hover' interval='2500' style={{height:`${height}px`}}>
             {display.map(news => 
                 <Carousel.Item>
                     <img
