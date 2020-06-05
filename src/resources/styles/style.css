@@ -1,63 +1,43 @@
-
-.header {
-    border-style: solid;
-    margin-bottom: 30px;
+.carousel-inner {
+    height: 600px;
 }
 
-.menu {
-    border-style: solid;
-    margin-bottom: 30px;
+.card-body {
+    padding-top: 0px;
+    height: 95px;
 }
 
-.focus {
-    border-style: solid;
-    display: flex;
-    flex-flow: row wrap;
-    width: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 300px;
-    margin-bottom: 30px;
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0px;
 }
 
-.allNewsStyle {
-    border-style: solid;
-    display: flex;
-    flex-flow: row wrap;
-    width: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 300px;
-    margin-bottom: 30px;
+.card-title {
+    font-size: 0.8rem;
 }
 
-.newsClass {
-    width: 350px;
-    display: flex;
-    border-style: solid;
-    align-items: center;
-    flex-direction: row;
-    flex: 0.2;
-    margin-right: 10px;
+.card-columns {
+    width: 930;
+}
+
+.card {
+    width: 330px;
+    height: 320px; 
+}
+
+.card img{
+    height: 13rem;
+}
+
+.carousel {
     margin-bottom: 10px;
 }
 
-.allNews {
-    width: 350px;
-    border: solid;
+.carousel-item {
+    height: 300px;
 }
 
-.allNews img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.test {
-    display: flex;
-    flex-direction: column;
+.carousel-item img{
+    height: 600px;
+    max-width: 930px;
 }

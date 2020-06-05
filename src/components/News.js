@@ -1,4 +1,6 @@
 import React from 'react'
+import Card from 'react-bootstrap/Card'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../resources/styles/style.css'
 
 const News = (props) => {
@@ -11,17 +13,20 @@ const News = (props) => {
         const day = datum.getDate()
         const month = datum.getMonth() + 1
         const year = datum.getFullYear()
-        console.log(d)
         return day + "." + month + "." + year
         
     }
 
     return(
-        <div className="news">
-            <img src={require(`/home/repic/cms-frontend/src/resources/images/${fileName}`)} alt="obavestenje" />
-            <h2>{currentDate() /* ovo izmeniti kada se poveze sa serverom da vuce datum sa servera */}</h2>
-            <p>{props.data.text}</p>
-        </div>
+        <Card border="secondary" bg={"white"}>
+            <Card.Img variant="top" src={require(`/home/repic/cms-frontend/src/resources/images/${fileName}`)} alt="obavestenje" />
+            <Card.Body>
+                <Card.Text>
+                    {currentDate() /* ovo izmeniti kada se poveze sa serverom da vuce datum sa servera */}
+                </Card.Text>
+                <Card.Title>{props.data.text}</Card.Title>
+            </Card.Body>
+        </Card>
     )
 }
 
