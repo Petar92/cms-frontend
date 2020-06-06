@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import '../resources/styles/style.css'
 
@@ -13,8 +13,18 @@ const Focus = (props) => {
         return day + "." + month + "." + year
         
     }
+
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const handleResize = () => {
+          setWidth(window.innerWidth)
+        }
+        window.addEventListener("resize", handleResize)
+        return () => { window.removeEventListener("resize", handleResize) }
+      }, [])
     
-    const height = (window.screen.width < 400) ? 270 : 600;
+    const height = (width < 400) ? 270 : 600;
 
     const display = props.news.filter(news => news.focus === true)
     
