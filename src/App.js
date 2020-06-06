@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Container from 'react-bootstrap/Container'
 import axios from 'axios'
 import './resources/styles/style.css'
+import newsService from './services/newsService'
 
 const App = () => {
 
