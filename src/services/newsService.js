@@ -1,5 +1,8 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/notes'
+
+//!!!!!!!!!!!!!!!!!!implementirati error handling!!!!!!!!!!!
+
+const baseUrl = 'http://localhost:3001/data'
 
 const getAll = () => {
   const request = axios.get(baseUrl)
@@ -16,8 +19,14 @@ const update = (id, newObject) => {
   return request.then(response => response.data)
 }
 
-export default { 
+/* instead of this:
+
+  export default { 
   getAll: getAll, 
   create: create, 
   update: update 
-}
+
+  we can use this because the keys are equal to values:
+} */
+
+export default { getAll, create, update }

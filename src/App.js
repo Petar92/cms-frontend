@@ -16,7 +16,7 @@ const App = () => {
   const [news, setNews] = useState([])
 
   useEffect(() => {
-      axios.get('http://192.168.2.227:3001/data')
+      axios.get('http://localhost:3001/data')
            .then(response => setNews(news.concat(response.data)))
   }, [])
 
@@ -35,14 +35,17 @@ const App = () => {
   }, []) */
 
   return (
-    <div>
-      <Container>
-          <Header fluid />
-          <Menu fluid />
-          <Image fluid />
+    <div className="main-div">
+      <Header />
+      <Menu fluid />
+      <Container className="container">
+          
+          <br></br>
           <Focus news={news} />
           <AllNews news={news} />
-          <Links />
+          <br></br>
+          <Links images={news} />
+          <br></br>
           <Footer fluid />
       </Container>
     </div>
