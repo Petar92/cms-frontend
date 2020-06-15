@@ -3,8 +3,8 @@ import React from 'react'
 const Header = () => {
     
     return(
-        <div>
-            <h1>Header</h1>
+        <div className="header" >
+            <p>српски srpski english    link fb i ostali</p>
         </div>
     )
 }

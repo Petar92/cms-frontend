@@ -24,7 +24,7 @@ const Focus = (props) => {
         return () => { window.removeEventListener("resize", handleResize) }
       }, [])
     
-    const height = (width < 400) ? 270 : 600;
+    const height = (width < 600) ? 270 : 600;
 
     const display = props.news.filter(news => news.focus === true)
     
