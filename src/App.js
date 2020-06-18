@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header'
 import Menu from './components/Menu'
-import Image from './components/Image'
 import Focus from './components/Focus'
 import AllNews from './components/AllNews'
 import Links from './components/Links'
@@ -9,7 +8,6 @@ import Footer from './components/Footer'
 import Container from 'react-bootstrap/Container'
 import axios from 'axios'
 import './resources/styles/style.css'
-import newsService from './services/newsService'
 
 const App = () => {
 
