@@ -1,28 +1,32 @@
 import React from 'react'
-import { Router, Link } from 'react-router-dom'
-import Container from 'react-bootstrap/Container'
-import Image from 'react-bootstrap/Image'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import Slider from "react-slick"
+import "../resources/styles/_slick.css"
+import "../resources/styles/_slickTheme.css"    
 
 const Links = (props) => {
-    const image = props.images.map((fileName) => {
-        return <Col xs={3} md={2}>
+
+    const settings = {
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+
+      const linkContent = props.images.map(link => {
+          return <div>
                     <a href="http://hotelbreza.mod.gov.rs/">
-                      <Image src={require(`/home/repic/cms-frontend/src/resources/images/${fileName.img}`)} 
+                      <img src={require(`/home/repic/cms-frontend/src/resources/images/${link.img}`)} 
                       alt="obavestenje" rounded />
                     </a>
-                </Col>
-    })
-    return(
-        <div className="links">
-            <Container>
-              <Row>
-                {image}
-              </Row>
-            </Container>
+                 </div>
+      })
+
+      return (
+        <div className='sliderA'>
+            <Slider {...settings}>
+              {linkContent}
+            </Slider>
         </div>
-    )
+      )
 }
 
 export default Links
