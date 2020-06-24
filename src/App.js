@@ -5,7 +5,6 @@ import Focus from './components/Focus'
 import AllNews from './components/AllNews'
 import Links from './components/Links'
 import Footer from './components/Footer'
-import Container from 'react-bootstrap/Container'
 import axios from 'axios'
 import './resources/styles/style.css'
 
@@ -36,16 +35,17 @@ const App = () => {
     <div className="main-div">
       <Header />
       <Menu fluid />
-      <Container className="container">
+      <Focus news={news} />
+      <div className="contents">
           
-          <br></br>
-          <Focus news={news} />
+          {/* <br></br> */}
+          
           <AllNews news={news} />
           <br></br>
           <Links images={news} />
           <br></br>
           
-      </Container>
+      </div>
       <Footer fluid />
     </div>
   );

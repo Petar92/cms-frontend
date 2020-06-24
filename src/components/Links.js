@@ -1,14 +1,14 @@
 import React from 'react'
-import Slider from "react-slick"
+import Slider from "react-slick"   
 import "../resources/styles/_slick.css"
-import "../resources/styles/_slickTheme.css"    
+import "../resources/styles/_slickTheme.css" 
 
 const Links = (props) => {
 
     const settings = {
         dots: true,
         slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToScroll: 4
       }
 
       const linkContent = props.images.map(link => {
@@ -25,6 +25,7 @@ const Links = (props) => {
             <Slider {...settings}>
               {linkContent}
             </Slider>
+            
         </div>
       )
 }

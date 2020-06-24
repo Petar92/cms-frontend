@@ -18,7 +18,7 @@ const News = (props) => {
     }
 
     return(
-        <Card border="secondary" bg={"white"}>
+        <Card border="light" bg={"white"}>
             <Card.Img variant="top" src={require(`/home/repic/cms-frontend/src/resources/images/${fileName}`)} alt="obavestenje" />
             <Card.Body>
                 <Card.Text>
@@ -26,6 +26,7 @@ const News = (props) => {
                 </Card.Text>
                 <Card.Title>{props.data.text}</Card.Title>
             </Card.Body>
+            <hr></hr>
         </Card>
     )
 }

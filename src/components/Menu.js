@@ -8,7 +8,7 @@ const Menu = () => {
     return(
         <div>
             <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
-                <Navbar.Brand href="#home">Pocetna strana</Navbar.Brand>
+                <Navbar.Brand href="#home">Shone kralj</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="mr-auto">
